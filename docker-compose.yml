@@ -1,0 +1,12 @@
+services:
+  ghost:
+    image: ghost
+    environment:
+      - NODE_ENV=development
+    ports:
+      - '2368:2368'
+    volumes:
+      - .:/var/lib/ghost/content/themes/leoblog
+      - content:/var/lib/ghost/content
+volumes:
+  content:

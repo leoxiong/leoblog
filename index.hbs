@@ -1,0 +1,13 @@
+{{!< default}}
+<div class="l-posts">
+    {{#foreach posts}}
+        <section id="{{comment_id}}" class="{{post_class}}">
+            <h2 class="l-posts-post">
+                <a href="{{url}}">{{title}}</a>
+                <span class="separator"></span>
+                <time class="l-post-date" datetime="{{date format="YYYY-MM-DD"}}">{{date}}</time>
+            </h2>
+        </section>
+    {{/foreach}}
+</div>
+{{pagination}}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="{{@site.locale}}">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{meta_title}}</title>
+    <link rel="stylesheet" href="{{asset "css/leoblog.css"}}"/>
+    <link rel="stylesheet" href="{{asset "css/prism-vs.css"}}"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Open+Sans:wght@300;400&family=Poppins:wght@100;200;300;400;500;600&display=swap">
+    {{ghost_head}}
+</head>
+<body class="{{body_class}}">
+<header class="l-header">
+    <a class="l-header-branding" href="/">
+        <div class="l-branding-logo">
+            <img src="{{@site.logo}}" alt="{{@site.title}}"/>
+        </div>
+        <div class="l-branding-summary">
+            <span class="l-summary-title">{{@site.title}}</span>
+            <span class="l-summary-description">{{@site.description}}</span>
+        </div>
+    </a>
+    <nav class="l-header-nav">
+        {{navigation}}
+    </nav>
+</header>
+<main class="l-content">
+    {{{body}}}
+</main>
+<script src="{{asset "js/reframe.min.js"}}"></script>
+<script src="{{asset "js/prism.js"}}"></script>
+<script>reframe('iframe');</script>
+{{ghost_foot}}
+</body>
+</html>

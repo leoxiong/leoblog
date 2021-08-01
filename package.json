@@ -1,0 +1,40 @@
+{
+  "name": "leoblog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dev-dependencies": {
+    "@tryghost/admin-api": "^1.4.3",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.37.0"
+  },
+  "description": "",
+  "config": {
+    "posts_per_page": "6",
+    "image_sizes": {
+      "xxs": {
+        "width": 30
+      },
+      "xs": {
+        "width": 100
+      },
+      "s": {
+        "width": 300
+      },
+      "m": {
+        "width": 600
+      },
+      "l": {
+        "width": 1000
+      },
+      "xl": {
+        "width": 2000
+      }
+    }
+  }
+}
